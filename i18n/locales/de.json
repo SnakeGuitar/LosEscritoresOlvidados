@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "blog": "Blog",
+    "texts": "Texte",
+    "inkwell": "Das Tintenfass",
+    "contests": "Wettbewerbe",
+    "alliances": "Allianzen",
+    "joinDiscord": "Discord beitreten"
+  },
+  "hero": {
+    "title": "Die Vergessenen Schriftsteller",
+    "subtitle": "Eine vergessene, gottgesegnete Bibliothek, in der Worte lebendig werden",
+    "cta": "Die Bibliothek erkunden",
+    "ctaSecondary": "Der Gemeinschaft beitreten"
+  },
+  "about": {
+    "sectionTitle": "Über uns",
+    "description": "Eine kleine Gemeinschaft, in der du deine Arbeit präsentieren, Feedback erhalten und dich mit anderen Autoren austauschen kannst. Respekt ist das Wichtigste, und Spaß ist Pflicht.",
+    "features": {
+      "editors": "Professionelle Lektoren",
+      "sessions": "Wöchentliche Lesesitzungen",
+      "classes": "Theoretische und praktische Erzählkurse",
+      "beta": "Beta-Lektüre",
+      "platforms": "Plattformunterstützung",
+      "youtube": "YouTube-Kanal und Hörbücher"
+    }
+  },
+  "blog": {
+    "sectionTitle": "Blog",
+    "subtitle": "Artikel, Reflexionen und Neuigkeiten aus unserer Gemeinschaft",
+    "readMore": "Weiterlesen",
+    "noPostsYet": "Bald werden neue Artikel veröffentlicht. Bleib dran!",
+    "by": "Von",
+    "publishedOn": "Veröffentlicht am"
+  },
+  "texts": {
+    "sectionTitle": "Texte",
+    "subtitle": "Ein Raum zum Teilen und Entdecken von Geschichten unserer Gemeinschaft",
+    "submitText": "Text einreichen",
+    "genre": "Genre",
+    "author": "Autor",
+    "noTextsYet": "Sei der Erste, der sein Werk mit der Gemeinschaft teilt."
+  },
+  "inkwell": {
+    "sectionTitle": "Das Tintenfass",
+    "subtitle": "Tipps, Lehrmaterial und Ressourcen für Autoren",
+    "tabs": {
+      "tips": "Tipps",
+      "ebooks": "E-Books",
+      "courses": "Lehrmaterial"
+    },
+    "noResourcesYet": "Wir bereiten großartige Ressourcen vor. Schau bald wieder vorbei!"
+  },
+  "contests": {
+    "sectionTitle": "Wettbewerbe",
+    "subtitle": "Mitmachen, schreiben und dein Talent zeigen",
+    "status": {
+      "open": "Offen",
+      "closed": "Geschlossen",
+      "judging": "In Bewertung"
+    },
+    "deadline": "Einsendeschluss",
+    "rules": "Regeln",
+    "prize": "Preis",
+    "participate": "Teilnehmen",
+    "noContestsYet": "Neue Wettbewerbe werden bald angekündigt. Mach deinen Stift bereit!"
+  },
+  "alliances": {
+    "sectionTitle": "Allianzen",
+    "subtitle": "Partnergemeinschaften, die unsere Leidenschaft fürs Schreiben teilen",
+    "visit": "Besuchen",
+    "noAlliancesYet": "Unsere Allianzen werden bald bekanntgegeben."
+  },
+  "footer": {
+    "description": "Eine Schreibgemeinschaft, in der Worte lebendig werden.",
+    "links": "Links",
+    "community": "Gemeinschaft",
+    "joinDiscord": "Discord beitreten",
+    "copyright": "Los Escritores Olvidados. Alle Rechte vorbehalten.",
+    "madeWith": "Mit Liebe von Autoren für Autoren gemacht."
+  },
+  "common": {
+    "loading": "Wird geladen…",
+    "error": "Ein Fehler ist aufgetreten",
+    "empty": "Kein Inhalt verfügbar",
+    "back": "Zurück",
+    "comingSoon": "Demnächst"
+  }
+}

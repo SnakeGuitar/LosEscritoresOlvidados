@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "홈",
+    "blog": "블로그",
+    "texts": "작품",
+    "inkwell": "잉크웰",
+    "contests": "대회",
+    "alliances": "동맹",
+    "joinDiscord": "Discord 참가"
+  },
+  "hero": {
+    "title": "잊혀진 작가들",
+    "subtitle": "신에게 잊혀진 오래된 도서관, 말이 살아 숨쉬는 곳",
+    "cta": "도서관 탐험하기",
+    "ctaSecondary": "커뮤니티 참가"
+  },
+  "about": {
+    "sectionTitle": "우리에 대해",
+    "description": "작품을 선보이고, 피드백을 받고, 다른 작가들과 교류할 수 있는 소규모 커뮤니티입니다. 존중이 최우선이며, 즐거움이 규칙입니다.",
+    "features": {
+      "editors": "전문 편집자",
+      "sessions": "매주 낭독 세션",
+      "classes": "서사 이론 및 실습 강의",
+      "beta": "베타 리딩",
+      "platforms": "플랫폼 지원",
+      "youtube": "유튜브 채널 및 오디오북"
+    }
+  },
+  "blog": {
+    "sectionTitle": "블로그",
+    "subtitle": "커뮤니티의 글, 성찰, 그리고 소식",
+    "readMore": "더 읽기",
+    "noPostsYet": "곧 새 글을 게재합니다. 기대해 주세요!",
+    "by": "글쓴이",
+    "publishedOn": "게재일"
+  },
+  "texts": {
+    "sectionTitle": "작품",
+    "subtitle": "커뮤니티의 이야기를 공유하고 발견하는 공간",
+    "submitText": "작품 제출",
+    "genre": "장르",
+    "author": "작가",
+    "noTextsYet": "커뮤니티에 작품을 처음으로 공유해 보세요."
+  },
+  "inkwell": {
+    "sectionTitle": "잉크웰",
+    "subtitle": "작가를 위한 팁, 교육 자료 및 리소스",
+    "tabs": {
+      "tips": "팁",
+      "ebooks": "전자책",
+      "courses": "교육 자료"
+    },
+    "noResourcesYet": "훌륭한 리소스를 준비 중입니다. 곧 다시 확인해 주세요!"
+  },
+  "contests": {
+    "sectionTitle": "대회",
+    "subtitle": "참가하고, 쓰고, 재능을 펼쳐라",
+    "status": {
+      "open": "접수 중",
+      "closed": "마감",
+      "judging": "심사 중"
+    },
+    "deadline": "마감일",
+    "rules": "규칙",
+    "prize": "상",
+    "participate": "참가하기",
+    "noContestsYet": "곧 새 대회를 발표합니다. 펜을 준비하세요!"
+  },
+  "alliances": {
+    "sectionTitle": "동맹",
+    "subtitle": "글쓰기에 대한 열정을 함께하는 파트너 커뮤니티",
+    "visit": "방문",
+    "noAlliancesYet": "동맹 커뮤니티를 곧 발표합니다."
+  },
+  "footer": {
+    "description": "말이 살아 숨쉬는 작가 커뮤니티.",
+    "links": "링크",
+    "community": "커뮤니티",
+    "joinDiscord": "Discord 참가",
+    "copyright": "Los Escritores Olvidados. 모든 권리 보유.",
+    "madeWith": "작가가 작가를 위해, 사랑을 담아 만들었습니다."
+  },
+  "common": {
+    "loading": "불러오는 중…",
+    "error": "오류가 발생했습니다",
+    "empty": "콘텐츠가 없습니다",
+    "back": "뒤로",
+    "comingSoon": "곧 출시"
+  }
+}

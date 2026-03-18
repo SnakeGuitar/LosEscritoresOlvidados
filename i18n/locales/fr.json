@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "blog": "Blog",
+    "texts": "Textes",
+    "inkwell": "L'Encrier",
+    "contests": "Concours",
+    "alliances": "Alliances",
+    "joinDiscord": "Rejoindre Discord"
+  },
+  "hero": {
+    "title": "Les Écrivains Oubliés",
+    "subtitle": "Une bibliothèque oubliée par Dieu, où les mots prennent vie",
+    "cta": "Explorer la bibliothèque",
+    "ctaSecondary": "Rejoindre la communauté"
+  },
+  "about": {
+    "sectionTitle": "Qui Sommes-Nous",
+    "description": "Une petite communauté où tu peux montrer ton travail, recevoir des retours et discuter avec d'autres écrivains. Le respect est primordial et s'amuser est la règle.",
+    "features": {
+      "editors": "Éditeurs professionnels",
+      "sessions": "Sessions de lecture hebdomadaires",
+      "classes": "Cours théoriques et pratiques de narration",
+      "beta": "Lecture bêta",
+      "platforms": "Soutien des plateformes",
+      "youtube": "Chaîne YouTube et livres audio"
+    }
+  },
+  "blog": {
+    "sectionTitle": "Blog",
+    "subtitle": "Articles, réflexions et actualités de notre communauté",
+    "readMore": "Lire la suite",
+    "noPostsYet": "Nous publierons bientôt de nouveaux articles. Restez à l'écoute!",
+    "by": "Par",
+    "publishedOn": "Publié le"
+  },
+  "texts": {
+    "sectionTitle": "Textes",
+    "subtitle": "Un espace pour partager et découvrir des histoires de notre communauté",
+    "submitText": "Soumettre un texte",
+    "genre": "Genre",
+    "author": "Auteur",
+    "noTextsYet": "Sois le premier à partager ton œuvre avec la communauté."
+  },
+  "inkwell": {
+    "sectionTitle": "L'Encrier",
+    "subtitle": "Conseils, matériel pédagogique et ressources pour écrivains",
+    "tabs": {
+      "tips": "Conseils",
+      "ebooks": "Livres électroniques",
+      "courses": "Matériel pédagogique"
+    },
+    "noResourcesYet": "Nous préparons d'excellentes ressources. Reviens bientôt!"
+  },
+  "contests": {
+    "sectionTitle": "Concours",
+    "subtitle": "Participe, écris et montre ton talent",
+    "status": {
+      "open": "Ouvert",
+      "closed": "Fermé",
+      "judging": "En évaluation"
+    },
+    "deadline": "Date limite",
+    "rules": "Règles",
+    "prize": "Prix",
+    "participate": "Participer",
+    "noContestsYet": "Nous annoncerons bientôt de nouveaux concours. Prépare ton stylo!"
+  },
+  "alliances": {
+    "sectionTitle": "Alliances",
+    "subtitle": "Communautés sœurs qui partagent notre amour de l'écriture",
+    "visit": "Visiter",
+    "noAlliancesYet": "Nous annoncerons bientôt nos alliances."
+  },
+  "footer": {
+    "description": "Une communauté d'écrivains où les mots prennent vie.",
+    "links": "Liens",
+    "community": "Communauté",
+    "joinDiscord": "Rejoindre Discord",
+    "copyright": "Los Escritores Olvidados. Tous droits réservés.",
+    "madeWith": "Fait avec amour par des écrivains, pour des écrivains."
+  },
+  "common": {
+    "loading": "Chargement…",
+    "error": "Une erreur s'est produite",
+    "empty": "Aucun contenu disponible",
+    "back": "Retour",
+    "comingSoon": "Bientôt disponible"
+  }
+}

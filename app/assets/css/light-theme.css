@@ -54,9 +54,13 @@
   --shadow-md: 0 4px 12px rgba(68, 33, 5, 0.12);
   --shadow-lg: 0 8px 24px rgba(68, 33, 5, 0.15);
 
-  --font-display: 'Playfair Display', 'Georgia', serif;
-  --font-body: 'Lora', 'Georgia', serif;
-  --font-accent: 'Crimson Text', 'Georgia', serif;
+  --font-display: 'Playfair Display', 'Noto Serif SC', 'Noto Serif JP', 'Noto Serif KR', 'Georgia', serif;
+  --font-body: 'Lora', 'Noto Serif SC', 'Noto Serif JP', 'Noto Serif KR', 'Georgia', serif;
+  --font-accent: 'Crimson Text', 'Noto Serif SC', 'Noto Serif JP', 'Noto Serif KR', 'Georgia', serif;
+
+  --font-cjk-zh: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', '宋体', serif;
+  --font-cjk-ja: 'Noto Serif JP', 'Source Han Serif JP', 'Yu Mincho', '游明朝', serif;
+  --font-cjk-ko: 'Noto Serif KR', 'Source Han Serif KR', 'Batang', '바탕', serif;
 
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;

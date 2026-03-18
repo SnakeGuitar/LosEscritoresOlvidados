@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "首页",
+    "blog": "博客",
+    "texts": "文稿",
+    "inkwell": "墨水台",
+    "contests": "竞赛",
+    "alliances": "联盟",
+    "joinDiscord": "加入 Discord"
+  },
+  "hero": {
+    "title": "被遗忘的作家们",
+    "subtitle": "一座被遗忘的神圣图书馆，文字在此焕发生命",
+    "cta": "探索图书馆",
+    "ctaSecondary": "加入社区"
+  },
+  "about": {
+    "sectionTitle": "关于我们",
+    "description": "一个小型社区，你可以在这里展示你的作品、获得反馈，并与其他作家交流。尊重是首要原则，享受乐趣是规则。",
+    "features": {
+      "editors": "专业编辑",
+      "sessions": "每周阅读会",
+      "classes": "叙事理论与实践课程",
+      "beta": "试读服务",
+      "platforms": "平台支持",
+      "youtube": "YouTube 频道与有声书"
+    }
+  },
+  "blog": {
+    "sectionTitle": "博客",
+    "subtitle": "来自我们社区的文章、思考与资讯",
+    "readMore": "阅读更多",
+    "noPostsYet": "新文章即将发布，敬请期待！",
+    "by": "作者",
+    "publishedOn": "发布于"
+  },
+  "texts": {
+    "sectionTitle": "文稿",
+    "subtitle": "分享与发现社区故事的空间",
+    "submitText": "提交文稿",
+    "genre": "类型",
+    "author": "作者",
+    "noTextsYet": "成为第一个与社区分享作品的人吧。"
+  },
+  "inkwell": {
+    "sectionTitle": "墨水台",
+    "subtitle": "面向作家的写作技巧、教学材料与资源",
+    "tabs": {
+      "tips": "技巧",
+      "ebooks": "电子书",
+      "courses": "教学材料"
+    },
+    "noResourcesYet": "我们正在准备精彩资源，请稍后回来！"
+  },
+  "contests": {
+    "sectionTitle": "竞赛",
+    "subtitle": "参与、写作，展示你的才华",
+    "status": {
+      "open": "报名中",
+      "closed": "已结束",
+      "judging": "评审中"
+    },
+    "deadline": "截止日期",
+    "rules": "规则",
+    "prize": "奖励",
+    "participate": "立即参与",
+    "noContestsYet": "新竞赛即将公布，准备好你的笔！"
+  },
+  "alliances": {
+    "sectionTitle": "联盟",
+    "subtitle": "与我们共享写作热情的伙伴社区",
+    "visit": "访问",
+    "noAlliancesYet": "我们的联盟社区即将公布。"
+  },
+  "footer": {
+    "description": "一个让文字焕发生命的作家社区。",
+    "links": "链接",
+    "community": "社区",
+    "joinDiscord": "加入 Discord",
+    "copyright": "Los Escritores Olvidados。保留所有权利。",
+    "madeWith": "由作家为作家，用爱制作。"
+  },
+  "common": {
+    "loading": "加载中……",
+    "error": "发生错误",
+    "empty": "暂无内容",
+    "back": "返回",
+    "comingSoon": "即将推出"
+  }
+}

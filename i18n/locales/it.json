@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "texts": "Testi",
+    "inkwell": "Calamaio",
+    "contests": "Concorsi",
+    "alliances": "Alleanze",
+    "joinDiscord": "Unisciti a Discord"
+  },
+  "hero": {
+    "title": "Gli Scrittori Dimenticati",
+    "subtitle": "Una biblioteca dimenticata da Dio, dove le parole prendono vita",
+    "cta": "Esplora la biblioteca",
+    "ctaSecondary": "Unisciti alla comunità"
+  },
+  "about": {
+    "sectionTitle": "Chi Siamo",
+    "description": "Una piccola comunità dove puoi mostrare il tuo lavoro, ricevere feedback e chattare con altri scrittori. Il rispetto è fondamentale e divertirsi è una regola.",
+    "features": {
+      "editors": "Editori professionali",
+      "sessions": "Sessioni di lettura settimanali",
+      "classes": "Lezioni teoriche e pratiche di narrativa",
+      "beta": "Lettura beta",
+      "platforms": "Supporto alle piattaforme",
+      "youtube": "Canale YouTube e audiolibri"
+    }
+  },
+  "blog": {
+    "sectionTitle": "Blog",
+    "subtitle": "Articoli, riflessioni e notizie dalla nostra comunità",
+    "readMore": "Leggi di più",
+    "noPostsYet": "Pubblicheremo presto nuovi articoli. Rimani sintonizzato!",
+    "by": "Di",
+    "publishedOn": "Pubblicato il"
+  },
+  "texts": {
+    "sectionTitle": "Testi",
+    "subtitle": "Uno spazio per condividere e scoprire storie dalla nostra comunità",
+    "submitText": "Invia testo",
+    "genre": "Genere",
+    "author": "Autore",
+    "noTextsYet": "Sii il primo a condividere il tuo lavoro con la comunità."
+  },
+  "inkwell": {
+    "sectionTitle": "Calamaio",
+    "subtitle": "Suggerimenti, materiale didattico e risorse per scrittori",
+    "tabs": {
+      "tips": "Suggerimenti",
+      "ebooks": "E-book",
+      "courses": "Materiale didattico"
+    },
+    "noResourcesYet": "Stiamo preparando risorse straordinarie. Torna presto!"
+  },
+  "contests": {
+    "sectionTitle": "Concorsi",
+    "subtitle": "Partecipa, scrivi e mostra il tuo talento",
+    "status": {
+      "open": "Aperto",
+      "closed": "Chiuso",
+      "judging": "In valutazione"
+    },
+    "deadline": "Scadenza",
+    "rules": "Regole",
+    "prize": "Premio",
+    "participate": "Partecipa",
+    "noContestsYet": "Presto annunceremo nuovi concorsi. Prepara la tua penna!"
+  },
+  "alliances": {
+    "sectionTitle": "Alleanze",
+    "subtitle": "Comunità sorelle che condividono il nostro amore per la scrittura",
+    "visit": "Visita",
+    "noAlliancesYet": "Presto annunceremo le nostre alleanze."
+  },
+  "footer": {
+    "description": "Una comunità di scrittori dove le parole prendono vita.",
+    "links": "Link",
+    "community": "Comunità",
+    "joinDiscord": "Unisciti a Discord",
+    "copyright": "Los Escritores Olvidados. Tutti i diritti riservati.",
+    "madeWith": "Fatto con amore da scrittori, per scrittori."
+  },
+  "common": {
+    "loading": "Caricamento…",
+    "error": "Si è verificato un errore",
+    "empty": "Nessun contenuto disponibile",
+    "back": "Indietro",
+    "comingSoon": "Prossimamente"
+  }
+}

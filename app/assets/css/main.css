@@ -14,6 +14,28 @@
  */
 
 /* ==========================================================================
+   CJK typography
+   When a CJK locale is active (@nuxtjs/i18n sets the lang attribute on
+   <html>), we switch to dedicated serif font stacks that render correctly
+   for each script. The base --font-* variables already include Noto Serif
+   CJK as fallback; these rules make the CJK font the first choice for the
+   matching locale, preventing Latin glyphs from being used as fallback.
+   ========================================================================== */
+
+:lang(zh) body { font-family: var(--font-cjk-zh); }
+:lang(ja) body { font-family: var(--font-cjk-ja); }
+:lang(ko) body { font-family: var(--font-cjk-ko); }
+
+:lang(zh) h1, :lang(zh) h2, :lang(zh) h3,
+:lang(zh) h4, :lang(zh) h5, :lang(zh) h6 { font-family: var(--font-cjk-zh); }
+
+:lang(ja) h1, :lang(ja) h2, :lang(ja) h3,
+:lang(ja) h4, :lang(ja) h5, :lang(ja) h6 { font-family: var(--font-cjk-ja); }
+
+:lang(ko) h1, :lang(ko) h2, :lang(ko) h3,
+:lang(ko) h4, :lang(ko) h5, :lang(ko) h6 { font-family: var(--font-cjk-ko); }
+
+/* ==========================================================================
    Reset
    ========================================================================== */
 

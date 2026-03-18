@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "blog": "ブログ",
+    "texts": "作品",
+    "inkwell": "インクウェル",
+    "contests": "コンテスト",
+    "alliances": "提携",
+    "joinDiscord": "Discordに参加"
+  },
+  "hero": {
+    "title": "忘れられた作家たち",
+    "subtitle": "神に忘れられた古い図書館、言葉がここに息づく",
+    "cta": "図書館を探索する",
+    "ctaSecondary": "コミュニティに参加"
+  },
+  "about": {
+    "sectionTitle": "私たちについて",
+    "description": "あなたの作品を発表し、フィードバックをもらい、他の作家と交流できる小さなコミュニティです。敬意が最優先、楽しむことがルールです。",
+    "features": {
+      "editors": "プロの編集者",
+      "sessions": "毎週の朗読会",
+      "classes": "物語論の理論と実践講座",
+      "beta": "ベータリーディング",
+      "platforms": "プラットフォームサポート",
+      "youtube": "YouTubeチャンネルとオーディオブック"
+    }
+  },
+  "blog": {
+    "sectionTitle": "ブログ",
+    "subtitle": "コミュニティからの記事・考察・お知らせ",
+    "readMore": "続きを読む",
+    "noPostsYet": "まもなく新しい記事を公開します。お楽しみに！",
+    "by": "著者",
+    "publishedOn": "公開日"
+  },
+  "texts": {
+    "sectionTitle": "作品",
+    "subtitle": "コミュニティの物語を共有・発見するスペース",
+    "submitText": "作品を投稿",
+    "genre": "ジャンル",
+    "author": "著者",
+    "noTextsYet": "コミュニティへの最初の投稿者になりましょう。"
+  },
+  "inkwell": {
+    "sectionTitle": "インクウェル",
+    "subtitle": "作家のためのヒント・教材・リソース",
+    "tabs": {
+      "tips": "ヒント",
+      "ebooks": "電子書籍",
+      "courses": "教材"
+    },
+    "noResourcesYet": "素晴らしいリソースを準備中です。またお越しください！"
+  },
+  "contests": {
+    "sectionTitle": "コンテスト",
+    "subtitle": "参加して、書いて、才能を見せよう",
+    "status": {
+      "open": "受付中",
+      "closed": "終了",
+      "judging": "審査中"
+    },
+    "deadline": "締め切り",
+    "rules": "ルール",
+    "prize": "賞",
+    "participate": "参加する",
+    "noContestsYet": "まもなく新しいコンテストを発表します。ペンの準備を！"
+  },
+  "alliances": {
+    "sectionTitle": "提携",
+    "subtitle": "創作への情熱を共有するパートナーコミュニティ",
+    "visit": "訪問",
+    "noAlliancesYet": "提携コミュニティをまもなく発表します。"
+  },
+  "footer": {
+    "description": "言葉が息づく作家のコミュニティ。",
+    "links": "リンク",
+    "community": "コミュニティ",
+    "joinDiscord": "Discordに参加",
+    "copyright": "Los Escritores Olvidados. 全著作権所有。",
+    "madeWith": "作家が作家のために、愛を込めて。"
+  },
+  "common": {
+    "loading": "読み込み中…",
+    "error": "エラーが発生しました",
+    "empty": "コンテンツがありません",
+    "back": "戻る",
+    "comingSoon": "近日公開"
+  }
+}

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t, locale, setLocale } = useI18n()
+const { t, locale, locales, setLocale } = useI18n()
 const localePath = useLocalePath()
 const { isDark, toggle: toggleTheme } = useTheme()
 
@@ -13,13 +13,25 @@ const navItems = computed(() => [
 ])
 
 const isMobileMenuOpen = ref(false)
+const isLangOpen = ref(false)
+const langDropdownRef = ref<HTMLElement | null>(null)
 
 const toggleMobileMenu = () => { isMobileMenuOpen.value = !isMobileMenuOpen.value }
 const closeMobileMenu = () => { isMobileMenuOpen.value = false }
 
-const toggleLocale = () => {
-  setLocale(locale.value === 'es' ? 'en' : 'es')
+const selectLocale = (code: string) => {
+  setLocale(code)
+  isLangOpen.value = false
 }
+
+const handleOutsideClick = (event: MouseEvent) => {
+  if (langDropdownRef.value && !langDropdownRef.value.contains(event.target as Node)) {
+    isLangOpen.value = false
+  }
+}
+
+onMounted(() => document.addEventListener('click', handleOutsideClick))
+onUnmounted(() => document.removeEventListener('click', handleOutsideClick))
 </script>
 
 <template>
@@ -47,13 +59,33 @@ const toggleLocale = () => {
 
       <div class="header-actions">
         <!-- Selector de idioma -->
-        <button
-          class="control-btn locale-toggle"
-          :title="locale === 'es' ? 'Switch to English' : 'Cambiar a Español'"
-          @click="toggleLocale"
-        >
-          {{ locale === 'es' ? 'EN' : 'ES' }}
-        </button>
+        <div ref="langDropdownRef" class="lang-dropdown">
+          <button
+            class="control-btn lang-trigger"
+            :aria-expanded="isLangOpen"
+            aria-haspopup="listbox"
+            @click.stop="isLangOpen = !isLangOpen"
+          >
+            <span class="lang-current">{{ locale.toUpperCase() }}</span>
+            <span class="lang-arrow" :class="{ open: isLangOpen }" aria-hidden="true">▾</span>
+          </button>
+          <Transition name="dropdown">
+            <ul v-if="isLangOpen" class="lang-menu" role="listbox">
+              <li
+                v-for="loc in locales"
+                :key="loc.code"
+                class="lang-option"
+                :class="{ active: loc.code === locale }"
+                role="option"
+                :aria-selected="loc.code === locale"
+                @click="selectLocale(loc.code)"
+              >
+                <span class="lang-option-code">{{ loc.code.toUpperCase() }}</span>
+                <span class="lang-option-name">{{ loc.name }}</span>
+              </li>
+            </ul>
+          </Transition>
+        </div>
 
         <!-- Toggle de tema -->
         <button
@@ -100,9 +132,15 @@ const toggleLocale = () => {
           {{ t(item.labelKey) }}
         </NuxtLink>
         <div class="mobile-controls">
-          <button class="control-btn locale-toggle" @click="toggleLocale">
-            {{ locale === 'es' ? 'EN' : 'ES' }}
-          </button>
+          <select
+            class="lang-select-mobile control-btn"
+            :value="locale"
+            @change="selectLocale(($event.target as HTMLSelectElement).value)"
+          >
+            <option v-for="loc in locales" :key="loc.code" :value="loc.code">
+              {{ loc.code.toUpperCase() }} — {{ loc.name }}
+            </option>
+          </select>
           <button class="control-btn theme-toggle" @click="toggleTheme">
             <span aria-hidden="true">{{ isDark ? '☀' : '☾' }}</span>
           </button>
@@ -196,7 +234,7 @@ const toggleLocale = () => {
   gap: var(--space-sm);
 }
 
-/* Botón de control neumórfico compartido (locale + theme) */
+/* Shared neumorphic control button (lang trigger, theme) */
 .control-btn {
   display: inline-flex;
   align-items: center;
@@ -235,6 +273,95 @@ const toggleLocale = () => {
 .theme-icon {
   font-size: 1rem;
   line-height: 1;
+}
+
+/* ── Language dropdown ── */
+.lang-dropdown {
+  position: relative;
+}
+
+.lang-trigger {
+  gap: var(--space-xs);
+}
+
+.lang-arrow {
+  font-size: 0.65rem;
+  transition: transform 0.25s ease;
+  display: inline-block;
+}
+
+.lang-arrow.open {
+  transform: rotate(180deg);
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + var(--space-sm));
+  right: 0;
+  min-width: 160px;
+  background: var(--color-background);
+  border-radius: var(--radius-md);
+  box-shadow: var(--neu-raised), 0 0 0 1px var(--color-border);
+  list-style: none;
+  overflow: hidden;
+  z-index: 200;
+  padding: var(--space-xs) 0;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: var(--font-accent);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.lang-option:hover {
+  background: var(--color-background-dark);
+  color: var(--color-primary);
+}
+
+.lang-option.active {
+  color: var(--color-secondary);
+  font-weight: 600;
+  background: var(--color-section-warm);
+}
+
+.lang-option-code {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  min-width: 28px;
+  color: var(--color-accent);
+}
+
+.lang-option.active .lang-option-code {
+  color: var(--color-secondary);
+}
+
+.lang-select-mobile {
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.85rem;
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: 80px;
+}
+
+/* ── Dropdown transition ── */
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.dropdown-enter-from,
+.dropdown-leave-to {
+  opacity: 0;
+  transform: translateY(-6px);
 }
 
 /* ── Discord btn ── */

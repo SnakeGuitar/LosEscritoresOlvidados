@@ -17,8 +17,15 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: [
-      { code: 'es', name: 'Español', file: 'es.json' },
-      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'es', name: 'Español',  file: 'es.json' },
+      { code: 'en', name: 'English',  file: 'en.json' },
+      { code: 'de', name: 'Deutsch',  file: 'de.json' },
+      { code: 'zh', name: '中文',      file: 'zh.json' },
+      { code: 'ja', name: '日本語',    file: 'ja.json' },
+      { code: 'ko', name: '한국어',    file: 'ko.json' },
+      { code: 'it', name: 'Italiano', file: 'it.json' },
+      { code: 'fr', name: 'Français', file: 'fr.json' },
+      { code: 'ru', name: 'Русский',  file: 'ru.json' },
     ],
     defaultLocale: 'es',
     langDir: '../i18n/locales',
@@ -30,8 +37,12 @@ export default defineNuxtConfig({
       'Playfair Display': [400, 700],
       'Lora': [400, 500, 700],
       'Crimson Text': [400, 600, 700],
+      'Noto Serif SC': [400, 700],
+      'Noto Serif JP': [400, 700],
+      'Noto Serif KR': [400, 700],
     },
     display: 'swap',
+    preload: true,
   },
 
   app: {
