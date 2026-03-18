@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "blog": "Blog",
+    "texts": "Textos",
+    "inkwell": "En el Tintero",
+    "contests": "Concursos",
+    "alliances": "Alianzas",
+    "joinDiscord": "Unirse al Discord"
+  },
+  "hero": {
+    "title": "Los Escritores Olvidados",
+    "subtitle": "Una biblioteca olvidada de la mano de Dios, donde las palabras cobran vida",
+    "cta": "Explora la biblioteca",
+    "ctaSecondary": "Unirse a la comunidad"
+  },
+  "about": {
+    "sectionTitle": "Quienes Somos",
+    "description": "Una pequeña comunidad donde podrás mostrar tu trabajo, recibir retroalimentación y charlar con otros escritores. El respeto es primordial y pasarla bien es regla.",
+    "features": {
+      "editors": "Editores profesionales",
+      "sessions": "Sesiones de lectura semanales",
+      "classes": "Clases de narrativa teóricas y prácticas",
+      "beta": "Lectura beta",
+      "platforms": "Apoyo a plataformas",
+      "youtube": "Canal de Youtube y audiolibros"
+    }
+  },
+  "blog": {
+    "sectionTitle": "Blog",
+    "subtitle": "Artículos, reflexiones y novedades de nuestra comunidad",
+    "readMore": "Leer más",
+    "noPostsYet": "Pronto publicaremos nuevos artículos. ¡Mantente atento!",
+    "by": "Por",
+    "publishedOn": "Publicado el"
+  },
+  "texts": {
+    "sectionTitle": "Textos",
+    "subtitle": "Un espacio para compartir y descubrir historias de nuestra comunidad",
+    "submitText": "Enviar texto",
+    "genre": "Género",
+    "author": "Autor",
+    "noTextsYet": "Sé el primero en compartir tu obra con la comunidad."
+  },
+  "inkwell": {
+    "sectionTitle": "En el Tintero",
+    "subtitle": "Consejos, material educativo y recursos para escritores",
+    "tabs": {
+      "tips": "Consejos",
+      "ebooks": "E-books",
+      "courses": "Material educativo"
+    },
+    "noResourcesYet": "Estamos preparando recursos increíbles. ¡Vuelve pronto!"
+  },
+  "contests": {
+    "sectionTitle": "Concursos",
+    "subtitle": "Participa, escribe y demuestra tu talento",
+    "status": {
+      "open": "Abierto",
+      "closed": "Cerrado",
+      "judging": "En evaluación"
+    },
+    "deadline": "Fecha límite",
+    "rules": "Reglas",
+    "prize": "Premio",
+    "participate": "Participar",
+    "noContestsYet": "Próximamente anunciaremos nuevos concursos. ¡Prepara tu pluma!"
+  },
+  "alliances": {
+    "sectionTitle": "Alianzas",
+    "subtitle": "Comunidades hermanas con las que compartimos el amor por las letras",
+    "visit": "Visitar",
+    "noAlliancesYet": "Pronto anunciaremos nuestras alianzas."
+  },
+  "footer": {
+    "description": "Una comunidad de escritores donde las palabras cobran vida.",
+    "links": "Enlaces",
+    "community": "Comunidad",
+    "joinDiscord": "Únete al Discord",
+    "copyright": "Los Escritores Olvidados. Todos los derechos reservados.",
+    "madeWith": "Hecho con amor por escritores, para escritores."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "empty": "No hay contenido disponible",
+    "back": "Volver",
+    "comingSoon": "Próximamente"
+  }
+}
