@@ -10,7 +10,8 @@ export default defineNuxtConfig({
   ],
 
   css: [
-    '~/assets/css/variables.css',
+    '~/assets/css/light-theme.css',
+    '~/assets/css/dark-theme.css',
     '~/assets/css/main.css',
   ],
 

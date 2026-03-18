@@ -1,0 +1,77 @@
+/**
+ * light-theme.css
+ * Default (light) theme for Los Escritores Olvidados.
+ *
+ * Defines all CSS custom properties consumed by components and main.css.
+ * The dark-theme.css counterpart overrides these same tokens under the
+ * [data-theme="dark"] selector — no component styles need to change.
+ *
+ * Color palette (from brand guide):
+ *   Background : #FAF3E2  — aged parchment
+ *   Primary    : #442105  — dark walnut ink
+ *   Secondary  : #B13219  — terracotta red
+ *   Accent     : #F6AC0F  — antique gold
+ *
+ * Neumorphism:
+ *   Shadows are derived from the parchment base. The light shadow is
+ *   pure white (#ffffff) and the dark shadow is a warm brown (#d4c0a0),
+ *   creating a soft raised-paper effect on the parchment background.
+ */
+
+:root {
+  --color-background: #FAF3E2;
+  --color-primary: #442105;
+  --color-secondary: #B13219;
+  --color-accent: #F6AC0F;
+
+  --color-primary-light: #5e3a1a;
+  --color-primary-lighter: #7a5533;
+  --color-secondary-light: #c9503a;
+  --color-secondary-lighter: #e67c5f;
+  --color-accent-light: #f8c04a;
+  --color-accent-lighter: #fad77f;
+  --color-background-dark: #f0e6cc;
+  --color-background-darker: #e6d9b8;
+  --color-text: #442105;
+  --color-text-muted: #7a5533;
+  --color-text-inverse: #FAF3E2;
+  --color-border: #d4c5a0;
+  --color-border-light: #e8dcc8;
+
+  --color-section-warm: rgba(246, 172, 15, 0.08);
+  --color-section-warm-border: rgba(246, 172, 15, 0.2);
+  --color-section-terra: rgba(177, 50, 25, 0.06);
+  --color-section-terra-border: rgba(177, 50, 25, 0.15);
+
+  --neu-shadow-light: #ffffff;
+  --neu-shadow-dark: #d4c0a0;
+  --neu-raised: 6px 6px 14px var(--neu-shadow-dark), -6px -6px 14px var(--neu-shadow-light);
+  --neu-raised-sm: 3px 3px 7px var(--neu-shadow-dark), -3px -3px 7px var(--neu-shadow-light);
+  --neu-inset: inset 4px 4px 8px var(--neu-shadow-dark), inset -4px -4px 8px var(--neu-shadow-light);
+  --neu-inset-sm: inset 2px 2px 5px var(--neu-shadow-dark), inset -2px -2px 5px var(--neu-shadow-light);
+
+  --shadow-sm: 0 1px 3px rgba(68, 33, 5, 0.1);
+  --shadow-md: 0 4px 12px rgba(68, 33, 5, 0.12);
+  --shadow-lg: 0 8px 24px rgba(68, 33, 5, 0.15);
+
+  --font-display: 'Playfair Display', 'Georgia', serif;
+  --font-body: 'Lora', 'Georgia', serif;
+  --font-accent: 'Crimson Text', 'Georgia', serif;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 50px;
+
+  --container-max: 1200px;
+  --container-padding: var(--space-lg);
+}

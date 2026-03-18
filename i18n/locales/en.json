@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "texts": "Texts",
+    "inkwell": "The Inkwell",
+    "contests": "Contests",
+    "alliances": "Alliances",
+    "joinDiscord": "Join Discord"
+  },
+  "hero": {
+    "title": "Los Escritores Olvidados",
+    "subtitle": "A forgotten library touched by the divine, where words come alive",
+    "cta": "Explore the library",
+    "ctaSecondary": "Join the community"
+  },
+  "about": {
+    "sectionTitle": "About Us",
+    "description": "A small community where you can showcase your work, receive feedback, and chat with other writers. Respect is paramount and having fun is the rule.",
+    "features": {
+      "editors": "Professional editors",
+      "sessions": "Weekly reading sessions",
+      "classes": "Theoretical and practical narrative classes",
+      "beta": "Beta reading",
+      "platforms": "Platform support",
+      "youtube": "YouTube channel and audiobooks"
+    }
+  },
+  "blog": {
+    "sectionTitle": "Blog",
+    "subtitle": "Articles, reflections, and news from our community",
+    "readMore": "Read more",
+    "noPostsYet": "We'll publish new articles soon. Stay tuned!",
+    "by": "By",
+    "publishedOn": "Published on"
+  },
+  "texts": {
+    "sectionTitle": "Texts",
+    "subtitle": "A space to share and discover stories from our community",
+    "submitText": "Submit text",
+    "genre": "Genre",
+    "author": "Author",
+    "noTextsYet": "Be the first to share your work with the community."
+  },
+  "inkwell": {
+    "sectionTitle": "The Inkwell",
+    "subtitle": "Tips, educational material, and resources for writers",
+    "tabs": {
+      "tips": "Tips",
+      "ebooks": "E-books",
+      "courses": "Educational material"
+    },
+    "noResourcesYet": "We're preparing amazing resources. Come back soon!"
+  },
+  "contests": {
+    "sectionTitle": "Contests",
+    "subtitle": "Participate, write, and show your talent",
+    "status": {
+      "open": "Open",
+      "closed": "Closed",
+      "judging": "Under review"
+    },
+    "deadline": "Deadline",
+    "rules": "Rules",
+    "prize": "Prize",
+    "participate": "Participate",
+    "noContestsYet": "We'll announce new contests soon. Get your pen ready!"
+  },
+  "alliances": {
+    "sectionTitle": "Alliances",
+    "subtitle": "Sister communities that share our love for writing",
+    "visit": "Visit",
+    "noAlliancesYet": "We'll announce our alliances soon."
+  },
+  "footer": {
+    "description": "A community of writers where words come alive.",
+    "links": "Links",
+    "community": "Community",
+    "joinDiscord": "Join Discord",
+    "copyright": "Los Escritores Olvidados. All rights reserved.",
+    "madeWith": "Made with love by writers, for writers."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "empty": "No content available",
+    "back": "Go back",
+    "comingSoon": "Coming soon"
+  }
+}

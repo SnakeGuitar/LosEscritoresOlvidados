@@ -1,0 +1,58 @@
+/**
+ * dark-theme.css
+ * Dark theme overrides for Los Escritores Olvidados.
+ *
+ * Applied when the <html> element carries the attribute data-theme="dark".
+ * The attribute is toggled by useTheme() → plugins/theme.client.ts.
+ *
+ * All tokens defined here mirror the names in light-theme.css; only
+ * color values change. No component CSS needs to reference this file
+ * directly — it works transparently through the CSS variable system.
+ *
+ * Color palette (dark / "tinta de noche"):
+ *   Background : #1c100a  — dark walnut
+ *   Primary    : #f0dfc0  — aged parchment (text on dark)
+ *   Secondary  : #e06040  — brighter terracotta (legible on dark)
+ *   Accent     : #F6AC0F  — antique gold (unchanged)
+ *
+ * Neumorphism:
+ *   Light shadow: #25180e (slightly lighter than the walnut base)
+ *   Dark shadow : #130b06 (slightly darker than the walnut base)
+ */
+
+[data-theme="dark"] {
+  --color-background: #1c100a;
+  --color-primary: #f0dfc0;
+  --color-secondary: #e06040;
+  --color-accent: #F6AC0F;
+
+  --color-primary-light: #d4c4a0;
+  --color-primary-lighter: #b89a7a;
+  --color-secondary-light: #e87a5a;
+  --color-secondary-lighter: #f0a090;
+  --color-accent-light: #f8c04a;
+  --color-accent-lighter: #fad77f;
+  --color-background-dark: #231409;
+  --color-background-darker: #1a0e07;
+  --color-text: #e8d9be;
+  --color-text-muted: #b89a7a;
+  --color-text-inverse: #1c100a;
+  --color-border: #3a2215;
+  --color-border-light: #2e1c10;
+
+  --color-section-warm: rgba(246, 172, 15, 0.06);
+  --color-section-warm-border: rgba(246, 172, 15, 0.15);
+  --color-section-terra: rgba(224, 96, 64, 0.08);
+  --color-section-terra-border: rgba(224, 96, 64, 0.2);
+
+  --neu-shadow-light: #25180e;
+  --neu-shadow-dark: #130b06;
+  --neu-raised: 6px 6px 14px var(--neu-shadow-dark), -6px -6px 14px var(--neu-shadow-light);
+  --neu-raised-sm: 3px 3px 7px var(--neu-shadow-dark), -3px -3px 7px var(--neu-shadow-light);
+  --neu-inset: inset 4px 4px 8px var(--neu-shadow-dark), inset -4px -4px 8px var(--neu-shadow-light);
+  --neu-inset-sm: inset 2px 2px 5px var(--neu-shadow-dark), inset -2px -2px 5px var(--neu-shadow-light);
+
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
