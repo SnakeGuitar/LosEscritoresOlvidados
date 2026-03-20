@@ -32,6 +32,11 @@ export default defineNuxtConfig({
     defaultLocale: 'es',
     langDir: '../i18n/locales',
     strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    },
   },
 
   googleFonts: {
@@ -50,6 +55,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Los Escritores Olvidados',
+      htmlAttrs: {
+        lang: 'es',
+      },
       meta: [
         { name: 'description', content: 'Comunidad de escritores - Discord' },
       ],
