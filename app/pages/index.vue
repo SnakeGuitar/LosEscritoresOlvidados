@@ -1,16 +1,17 @@
 <script setup lang="ts">
-const { posts } = useBlog()
-const { texts } = useTexts()
 const { contests } = useContests()
-const { alliances } = useAlliances()
+
+useSeoMeta({
+  title: 'Los Escritores Olvidados — Comunidad literaria',
+  description: 'Lecturas semanales, concursos temáticos y una comunidad en Discord para compartir tu escritura.',
+})
 </script>
 
 <template>
-  <div>
+  <div class="home-page">
     <SectionsHeroSection />
-    <SectionsAboutSection />
-    <SectionsBlogSection :posts="posts" preview />
+    <SectionsReadingSchedule compact />
     <SectionsContestsSection :contests="contests" preview />
-    <SectionsAlliancesSection :alliances="alliances" />
+    <SectionsCommunitySection />
   </div>
 </template>

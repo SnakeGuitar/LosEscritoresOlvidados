@@ -52,8 +52,27 @@ export interface Contest {
   status: ContestStatus
   deadline: string
   prize: string
+  theme: string
+  month: string
+  year: number
+  artworkTone?: 'red' | 'pink' | 'gold' | 'plum'
+  winner?: ContestRecognition
+  finalists?: ContestRecognition[]
+  mentions?: ContestRecognition[]
+  published?: boolean
+  monthNumber?: number
   rulesUrl?: string
   discordUrl?: string
+}
+
+export interface ContestRecognition {
+  id?: string
+  title: string
+  author: string
+  excerpt?: string
+  textUrl?: string
+  distinction?: 'winner' | 'finalist' | 'honorable_mention'
+  position?: number
 }
 
 /**

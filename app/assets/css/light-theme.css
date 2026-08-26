@@ -79,3 +79,39 @@
   --container-max: 1200px;
   --container-padding: var(--space-lg);
 }
+
+/* 2026 brand refresh — sampled from the Gaby mascot artwork. */
+:root {
+  --color-background: #fffaf4;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f8f2ee;
+  --color-ink: #23142e;
+  --color-brand-ink: #23142e;
+  --color-primary: #23142e;
+  --color-primary-light: #3f2850;
+  --color-primary-lighter: #705d79;
+  --color-secondary: #ef2b17;
+  --color-pink: #e52f6b;
+  --color-pink-soft: #fde7ef;
+  --color-red: #ef2b17;
+  --color-red-soft: #ffebe6;
+  --color-gold: #f6ac0f;
+  --color-gold-soft: #fff2c9;
+  --color-accent: #f6ac0f;
+  --color-text: #31253a;
+  --color-text-muted: #73687a;
+  --color-text-faint: #a397a7;
+  --color-text-inverse: #fffaf4;
+  --color-border: #e4d9e2;
+  --color-border-light: #eee7ec;
+  --color-border-strong: #c7bac5;
+  --shadow-sm: 0 2px 8px rgba(35, 20, 46, .06);
+  --shadow-md: 0 12px 30px rgba(35, 20, 46, .08);
+  --shadow-lg: 0 24px 60px rgba(35, 20, 46, .12);
+  --font-display: 'Georgia', 'Times New Roman', serif;
+  --font-body: 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Segoe UI', 'Arial', sans-serif;
+  --font-accent: 'Segoe UI', 'Arial', sans-serif;
+  --container-max: 1180px;
+  --container-padding: clamp(1.1rem, 4vw, 2rem);
+}

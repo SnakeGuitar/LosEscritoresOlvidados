@@ -1,14 +1,13 @@
 <script setup lang="ts">
 const { contests, isLoading } = useContests()
-const { t } = useI18n()
-
 useSeoMeta({
-  title: () => `${t('contests.sectionTitle')} — Los Escritores Olvidados`,
+  title: 'Concursos — Los Escritores Olvidados',
+  description: 'Archivo de concursos temáticos, textos ganadores y menciones honoríficas de la comunidad.',
 })
 </script>
 
 <template>
-  <div>
+  <div class="page-top-space">
     <SectionsContestsSection :contests="contests" />
   </div>
 </template>

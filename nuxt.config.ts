@@ -4,9 +4,19 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
+  runtimeConfig: {
+    databaseUrl: '',
+    discordClientId: '',
+    discordClientSecret: '',
+    discordRedirectUri: '',
+    discordGuildId: '',
+    discordAdminRoleId: '',
+    discordReaderRoleId: '',
+    sessionSecret: '',
+  },
+
   modules: [
     '@nuxtjs/i18n',
-    '@nuxtjs/google-fonts',
     '@vercel/analytics'
   ],
 
@@ -38,28 +48,15 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
   },
-
-  googleFonts: {
-    families: {
-      'Playfair Display': [400, 700],
-      'Lora': [400, 500, 700],
-      'Crimson Text': [400, 600, 700],
-      'Noto Serif SC': [400, 700],
-      'Noto Serif JP': [400, 700],
-      'Noto Serif KR': [400, 700],
-    },
-    display: 'swap',
-    preload: true,
-  },
-
   app: {
     head: {
-      title: 'Los Escritores Olvidados',
+      title: 'Los Escritores Olvidados — Comunidad literaria',
       htmlAttrs: {
         lang: 'es',
       },
       meta: [
-        { name: 'description', content: 'Comunidad de escritores - Discord' },
+        { name: 'description', content: 'Comunidad literaria en Discord con lecturas semanales, acompañamiento editorial y concursos temáticos.' },
+        { name: 'theme-color', content: '#23142e' },
       ],
     },
   },

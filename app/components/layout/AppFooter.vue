@@ -1,165 +1,38 @@
 <script setup lang="ts">
-const { t } = useI18n()
-const localePath = useLocalePath()
-
-const currentYear = new Date().getFullYear()
+const year = new Date().getFullYear()
 </script>
 
 <template>
-  <footer class="app-footer">
-    <div class="footer-ornament">
-      <span class="ornament-line"></span>
-      <span class="ornament-symbol">&sect;</span>
-      <span class="ornament-line"></span>
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo"><img src="~/assets/gaby-logo.png" alt=""></span>
+        <div><strong>Los Escritores Olvidados</strong><p>Una comunidad donde las historias encuentran voz.</p></div>
+      </div>
+      <nav aria-label="Enlaces de pie de página">
+        <NuxtLink to="/lecturas">Lecturas</NuxtLink>
+        <NuxtLink to="/concursos">Concursos</NuxtLink>
+        <a href="https://discord.gg/edwk6mFFQk" target="_blank" rel="noopener noreferrer">Discord ↗</a>
+      </nav>
     </div>
-
-    <div class="container footer-inner">
-      <div class="footer-section footer-brand">
-        <img
-          src="~/assets/cat-logo.webp"
-          alt="LEO"
-          class="footer-logo"
-        />
-        <p class="footer-description">{{ t('footer.description') }}</p>
-      </div>
-
-      <div class="footer-section">
-        <h4 class="footer-heading">{{ t('footer.links') }}</h4>
-        <nav class="footer-nav">
-          <NuxtLink :to="localePath('/blog')">{{ t('nav.blog') }}</NuxtLink>
-          <NuxtLink :to="localePath('/textos')">{{ t('nav.texts') }}</NuxtLink>
-          <NuxtLink :to="localePath('/en-el-tintero')">{{ t('nav.inkwell') }}</NuxtLink>
-          <NuxtLink :to="localePath('/concursos')">{{ t('nav.contests') }}</NuxtLink>
-        </nav>
-      </div>
-
-      <div class="footer-section">
-        <h4 class="footer-heading">{{ t('footer.community') }}</h4>
-        <nav class="footer-nav">
-          <a
-            href="https://discord.gg/edwk6mFFQk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {{ t('footer.joinDiscord') }}
-          </a>
-          <NuxtLink :to="localePath('/alianzas')">{{ t('nav.alliances') }}</NuxtLink>
-        </nav>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p>&copy; {{ currentYear }} {{ t('footer.copyright') }}</p>
-        <p class="footer-tagline">{{ t('footer.madeWith') }}</p>
-      </div>
+    <div class="container footer-bottom">
+      <span>© {{ year }} Los Escritores Olvidados</span>
+      <span>Hecho entre libros, café y buenas conversaciones.</span>
     </div>
   </footer>
 </template>
 
 <style scoped>
-.app-footer {
-  background: var(--color-primary);
-  color: var(--color-text-inverse);
-  margin-top: var(--space-4xl);
-}
-
-.footer-ornament {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-lg) 0;
-  background: var(--color-primary-light);
-}
-
-.ornament-line {
-  width: 60px;
-  height: 1px;
-  background: var(--color-accent);
-}
-
-.ornament-symbol {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  color: var(--color-accent);
-  margin: 0 var(--space-md);
-}
-
-.footer-inner {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: var(--space-2xl);
-  padding: var(--space-3xl) var(--container-padding);
-}
-
-.footer-logo {
-  height: 56px;
-  width: auto;
-  border-radius: 50%;
-  margin-bottom: var(--space-md);
-}
-
-.footer-description {
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  opacity: 0.85;
-  line-height: 1.6;
-}
-
-.footer-heading {
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  color: var(--color-accent);
-  margin-bottom: var(--space-md);
-}
-
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-}
-
-.footer-nav a {
-  font-family: var(--font-accent);
-  color: var(--color-text-inverse);
-  opacity: 0.8;
-  text-decoration: none;
-  transition: opacity 0.3s ease, color 0.3s ease;
-}
-
-.footer-nav a:hover {
-  opacity: 1;
-  color: var(--color-accent);
-}
-
-.footer-bottom {
-  border-top: 1px solid var(--color-primary-light);
-  padding: var(--space-lg) 0;
-}
-
-.footer-bottom-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.85rem;
-  opacity: 0.7;
-}
-
-.footer-tagline {
-  font-family: var(--font-accent);
-  font-style: italic;
-}
-
-@media (max-width: 768px) {
-  .footer-inner {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer-bottom-inner {
-    flex-direction: column;
-    gap: var(--space-sm);
-    text-align: center;
-  }
-}
+.site-footer { border-top: 1px solid var(--color-border-light); background: var(--color-background); }
+.footer-top { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.footer-brand { display: flex; align-items: center; gap: .9rem; }
+.footer-logo { display: grid; place-items: center; width: 52px; height: 52px; overflow: hidden; border-radius: 16px; background: var(--color-pink-soft); }
+.footer-logo img { width: 62px; max-width: none; transform: translateY(11px); }
+.footer-brand strong { color: var(--color-ink); font: 900 .83rem var(--font-sans); }
+.footer-brand p { margin-top: .2rem; color: var(--color-text-faint); font-size: .74rem; }
+.footer-top nav { display: flex; gap: 1.5rem; }
+.footer-top nav a { color: var(--color-text-muted); font: 800 .74rem var(--font-sans); }
+.footer-top nav a:hover { color: var(--color-pink); }
+.footer-bottom { display: flex; justify-content: space-between; gap: 1rem; padding-top: 1rem; padding-bottom: 1.6rem; border-top: 1px solid var(--color-border-light); color: var(--color-text-faint); font: .65rem var(--font-sans); }
+@media (max-width: 650px) { .footer-top, .footer-bottom { align-items: flex-start; flex-direction: column; } .footer-top nav { flex-wrap: wrap; } }
 </style>
