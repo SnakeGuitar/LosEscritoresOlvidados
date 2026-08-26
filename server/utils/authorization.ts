@@ -33,9 +33,11 @@ const permissions: Record<AppRole, Permission[]> = {
   official_reader: ['manage_readings', 'manage_contest_texts'],
 }
 
-function roleFromIds(roleIds: string[]): AppRole | null {
+export function roleFromDiscordMember(discordUserId: string, roleIds: string[]): AppRole | null {
   const config = useRuntimeConfig()
+  if (config.discordOwnerUserId && discordUserId === config.discordOwnerUserId) return 'admin'
   if (config.discordAdminRoleId && roleIds.includes(config.discordAdminRoleId)) return 'admin'
+  if (config.discordModRoleId && roleIds.includes(config.discordModRoleId)) return 'admin'
   if (config.discordReaderRoleId && roleIds.includes(config.discordReaderRoleId)) return 'official_reader'
   return null
 }
@@ -78,7 +80,7 @@ export async function getAuthorizedSession(event: H3Event): Promise<AuthorizedSe
   try {
     const accessToken = await currentAccessToken(row)
     const member = await fetchCurrentDiscordMember(accessToken)
-    const role = roleFromIds(member.roles)
+    const role = roleFromDiscordMember(member.user.id, member.roles)
     if (!role) return null
     return {
       user: {

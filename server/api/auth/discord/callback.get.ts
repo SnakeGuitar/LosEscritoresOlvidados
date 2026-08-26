@@ -10,10 +10,8 @@ export default defineEventHandler(async (event) => {
   try {
     const tokens = await exchangeDiscordCode(query.code)
     const member = await fetchCurrentDiscordMember(tokens.access_token)
-    const config = useRuntimeConfig()
-    const isAuthorized = (config.discordAdminRoleId && member.roles.includes(config.discordAdminRoleId))
-      || (config.discordReaderRoleId && member.roles.includes(config.discordReaderRoleId))
-    if (!isAuthorized) return sendRedirect(event, '/?auth=forbidden')
+    const role = roleFromDiscordMember(member.user.id, member.roles)
+    if (!role) return sendRedirect(event, '/?auth=forbidden')
 
     const sql = database()
     const displayName = member.nick || member.user.global_name || member.user.username

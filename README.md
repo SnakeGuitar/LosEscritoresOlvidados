@@ -42,7 +42,7 @@ El flujo solicita `identify` y `guilds.members.read`. Antes de cada escritura se
 
 Permisos:
 
-- Administrador: listas, concursos y textos seleccionados.
+- Owner, administrador y moderador: listas, concursos y textos seleccionados.
 - Lector oficial: listas y textos seleccionados.
 
 ## 3. Variables de entorno
@@ -53,7 +53,9 @@ NUXT_DISCORD_CLIENT_ID=
 NUXT_DISCORD_CLIENT_SECRET=
 NUXT_DISCORD_REDIRECT_URI=https://TU_DOMINIO/api/auth/discord/callback
 NUXT_DISCORD_GUILD_ID=
+NUXT_DISCORD_OWNER_USER_ID=
 NUXT_DISCORD_ADMIN_ROLE_ID=
+NUXT_DISCORD_MOD_ROLE_ID=
 NUXT_DISCORD_READER_ROLE_ID=
 NUXT_SESSION_SECRET=
 ```
